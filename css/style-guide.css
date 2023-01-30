@@ -1,0 +1,40 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-grey: hsl(212, 45%, 89%);
+
+  --clr-secondary: hsl(220, 15%, 55%);
+  --clr-primary: hsl(218, 44%, 22%);
+
+  --ff-primary: "Outfit", sans-serif;
+
+  --ff-body: var(var(--ff-primary));
+  --ff-heading: var(var(--ff-primary));
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-p: 15px;
+  --fs-primary-heading: 2rem;
+}
+
+/* Utility Classes */
+
+.p-text {
+  font-size: var(--fs-p);
+  color: var(--clr-light-grey);
+  font-weight: var(--fw-regular);
+}
+
+.h-text {
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary);
+  font-size: var(--fs-primary-heading);
+}
+
+.bg-primary {
+  background: var(--clr-secondary);
+}
+
+.bg-secondary {
+  background: var(--clr-white);
+}
