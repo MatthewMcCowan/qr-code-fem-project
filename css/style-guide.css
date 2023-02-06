@@ -3,38 +3,44 @@
   --clr-light-grey: hsl(212, 45%, 89%);
 
   --clr-secondary: hsl(220, 15%, 55%);
-  --clr-primary: hsl(218, 44%, 22%);
+  --clr-primary-900: hsl(218, 44%, 22%);
+  --clr-primary-500: hsl(218, 44%, 87%);
 
   --ff-primary: "Outfit", sans-serif;
 
-  --ff-body: var(var(--ff-primary));
-  --ff-heading: var(var(--ff-primary));
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
 
   --fw-regular: 400;
   --fw-bold: 700;
 
   --fs-p: 15px;
-  --fs-primary-heading: 2rem;
+  --fs-primary-heading: 1.3rem;
 }
 
 /* Utility Classes */
 
 .p-text {
   font-size: var(--fs-p);
-  color: var(--clr-light-grey);
+  color: var(--clr-secondary);
   font-weight: var(--fw-regular);
 }
 
 .h-text {
   font-weight: var(--fw-bold);
-  color: var(--clr-primary);
+  color: var(--clr-primary-900);
   font-size: var(--fs-primary-heading);
 }
 
 .bg-primary {
-  background: var(--clr-secondary);
+  background: var(--clr-primary-500);
 }
 
 .bg-secondary {
   background: var(--clr-white);
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
 }

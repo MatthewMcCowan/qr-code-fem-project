@@ -1,3 +1,48 @@
-body{
-    font-family: var(--ff-body);
+body {
+  font-family: var(--ff-body);
+}
+
+.card-container {
+  min-height: 100vh;
+}
+
+@media (min-width: 50em) {
+  section {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: var(--clr-white);
+  }
+  .card-container {
+    min-height: 70vh;
+    width: 90%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 340px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.img-container {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  text-align: center;
+  padding-inline: 1.2rem;
+  line-height: normal;
 }
